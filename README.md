@@ -1,6 +1,7 @@
 ## Stanford Unsupervised Feature Learning and Deep Learning Tutorial
 
 Tutorial Website: http://ufldl.stanford.edu/wiki/index.php/UFLDL_Tutorial
+
 This repo contains python templates for the exercises, based on the completed exercises here: https://github.com/jatinshah/ufldl_tutorial
 
 ### Exercise 1: Sparse Autoencoder
