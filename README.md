@@ -54,7 +54,7 @@ None
 To run this exercise, start python in the home directory for this repo and run:
 `execfile('ex_3a_pca_in_2d.py')`
 
-### Exercise 3a: [PCA and Whitening](http://deeplearning.stanford.edu/wiki/index.php/Exercise:PCA_and_Whitening)
+### Exercise 3b: [PCA and Whitening](http://deeplearning.stanford.edu/wiki/index.php/Exercise:PCA_and_Whitening)
 
 Implement PCA, PCA whitening & ZCA whitening
 
