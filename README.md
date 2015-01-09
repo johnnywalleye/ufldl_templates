@@ -4,9 +4,7 @@ Tutorial Website: http://ufldl.stanford.edu/wiki/index.php/UFLDL_Tutorial
 
 This repo contains python templates for the exercises, based on the completed exercises here: https://github.com/jatinshah/ufldl_tutorial
 
-### Exercise 1: Sparse Autoencoder
-
-http://ufldl.stanford.edu/wiki/index.php/Exercise:Sparse_Autoencoder
+### Exercise 1: [Sparse Autoencoder](http://ufldl.stanford.edu/wiki/index.php/Exercise:Sparse_Autoencoder)
 
 Sparse Autoencoder implementation, learning/visualizing features on sample data
 
@@ -24,9 +22,7 @@ Other files used:
 To run this exercise, start python in the home directory for this repo and run:
 `execfile('ex_1_sparse_autoencoder.py')`
 
-### Exercise 2: Sparse Autoencoder, Vectorized
-
-http://ufldl.stanford.edu/wiki/index.php/Exercise:Vectorization
+### Exercise 2: [Sparse Autoencoder, Vectorized](http://ufldl.stanford.edu/wiki/index.php/Exercise:Vectorization)
 
 Sparse Autoencoder vectorized implementation, learning/visualizing features on MNIST data
 
@@ -43,9 +39,7 @@ Other files used:
 To run this exercise, start python in the home directory for this repo and run:
 `execfile('ex_2_sparse_autoencoder_vect.py')`
 
-### Exercise 3a: PCA in 2D
-
-http://deeplearning.stanford.edu/wiki/index.php/Exercise:PCA_in_2D
+### Exercise 3a: [PCA in 2D](http://deeplearning.stanford.edu/wiki/index.php/Exercise:PCA_in_2D)
 
 Implement PCA, PCA whitening & ZCA whitening
 
@@ -60,9 +54,7 @@ None
 To run this exercise, start python in the home directory for this repo and run:
 `execfile('ex_3a_pca_in_2d.py')`
 
-### Exercise 3a: PCA and Whitening
-
-http://deeplearning.stanford.edu/wiki/index.php/Exercise:PCA_and_Whitening
+### Exercise 3a: [PCA and Whitening](http://deeplearning.stanford.edu/wiki/index.php/Exercise:PCA_and_Whitening)
 
 Implement PCA, PCA whitening & ZCA whitening
 
