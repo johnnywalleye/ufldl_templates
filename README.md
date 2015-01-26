@@ -69,3 +69,18 @@ Other files used:
 
 To run this exercise, start python in the home directory for this repo and run:
 `execfile('ex_3b_pca_gen.py')`
+
+### Exercise 4: [Softmax Regression](http://ufldl.stanford.edu/wiki/index.php/Exercise:Softmax_Regression)
+
+Classify MNIST digits via softmax regression (multivariate logistic regression)
+
+Data for this exercise is in this repo at `data/mnist/train-images-idx3-ubyte`, `data/mnist/train-labels-idx1-ubyte`, `data/mnist/t10k-images-idx3-ubyte`, `data/mnist/t10k-labels-idx1-ubyte`
+
+Files to update:
+* [softmax.py](softmax.py): Softmax regression cost & gradient functions
+
+Other files used:
+* [ex_4_softmax_exercise.py](ex_4_softmax_exercise.py): Classify MNIST digits
+* [gradient.py](gradient.py): Functions to compute & check cost and gradient (from exercise 1)
+
+To run this exercise, start python in the home directory for this repo and run: `execfile('ex_4_softmax_exercise.py')`
