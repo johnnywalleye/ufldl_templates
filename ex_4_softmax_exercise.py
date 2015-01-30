@@ -50,7 +50,7 @@ input_data = images
 # in order to speed up gradient checking. 
 # Here, we create synthetic dataset using random data for testing
 
-debug = True  # Set debug to true when debugging.
+debug = False  # Set debug to true when debugging.
 if debug:
     input_size = 8
     input_data = np.random.normal(size=[8, 100])  # 100 dummy images with 8 pixels each
@@ -74,10 +74,11 @@ cost, grad = softmax.softmax_cost(theta, num_classes, input_size, lambda_, input
 #  gradients are correct before learning the parameters.
 # 
 
-if debug:
-    J = lambda x: softmax.softmax_cost(theta, num_classes, input_size, lambda_, input_data, labels)
-    num_grad = gradient.compute_gradient(J, theta)
 
+if debug:
+    J = lambda x: softmax.softmax_cost(x, num_classes, input_size, lambda_, input_data, labels)
+    num_grad = gradient.compute_gradient(J, theta)
+    
     # Use this to visually compare the gradients side by side
     print num_grad, grad
 
@@ -85,6 +86,7 @@ if debug:
     diff = np.linalg.norm(num_grad - grad) / np.linalg.norm(num_grad + grad)
     print "Norm of the difference between numerical and analytical num_grad (should be < 1e-9)\n\n"
     print diff
+    
     # The difference should be small.
     # In our implementation, these values are usually less than 1e-7.
 
@@ -97,7 +99,7 @@ if debug:
 #  you can start training your softmax regression code using softmax_train
 #  (which uses minFunc).
 
-options = {'maxiter': 100}
+options = {'maxiter': 500, 'disp':True}
 softmax_model = softmax.softmax_train(input_size, num_classes, lambda_, input_data, labels, options)
                           
 # Although we only use 100 iterations here to train a classifier for the 
