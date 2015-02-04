@@ -119,3 +119,23 @@ def sparse_autoencoder_cost_vectorized(theta, visible_size, hidden_size,
                            b2grad.reshape(visible_size)))
 
     return cost, grad
+
+def sparse_autoencoder(theta, hidden_size, visible_size, data):
+    """
+    :param theta: trained weights from the autoencoder
+    :param hidden_size: the number of hidden units (probably 25)
+    :param visible_size: the number of input units (probably 64)
+    :param data: Our matrix containing the training data as columns.  So, data(:,i) is the i-th training example.
+    """
+
+    # We first convert theta to the (W1, W2, b1, b2) matrix/vector format, so that this
+    # follows the notation convention of the lecture notes.
+    W1 = theta[0:hidden_size * visible_size].reshape(hidden_size, visible_size)
+    b1 = theta[2 * hidden_size * visible_size:2 * hidden_size * visible_size + hidden_size]
+
+    # Number of training examples
+    m = data.shape[1]
+
+    ## ---------- YOUR CODE HERE --------------------------------------
+    #  Instructions: Compute the activation of the hidden layer for the Sparse Autoencoder.
+    
