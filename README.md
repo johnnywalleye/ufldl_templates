@@ -84,3 +84,32 @@ Other files used:
 * [gradient.py](gradient.py): Functions to compute & check cost and gradient (from exercise 1)
 
 To run this exercise, start python in the home directory for this repo and run: `execfile('ex_4_softmax_exercise.py')`
+
+### Exercise: [Convolution and Pooling](http://ufldl.stanford.edu/tutorial/supervised/ExerciseConvolutionAndPooling/)
+
+Implement convolution and pooling functions
+
+Files to update:
+* [cnn_pool_and_convolve.py](cnn_pool_and_convolve.py): Convolution and pooling functions
+
+Other files used:
+* [cnn_exercise.py](cnn_exercise.py)
+
+To run this exercise, start python in the home directory for this repo and run: `execfile('cnn_exercise.py')`
+
+### Exercise: [Convolutional Neural Network](http://ufldl.stanford.edu/tutorial/supervised/ExerciseConvolutionalNeuralNetwork/)
+
+Implement convolutional neural network
+
+Files to update:
+* [cnn_train.py](cnn_train.py): Train and test a convnet
+* [cnn_cost.py](cnn_cost.py): Convnet cost function
+* [cnn_params_to_stack.py](cnn_params_to_stack.py): Stack cnn params as matrices and vectors
+* [cnn_init_params.py](cnn_init_params.py): Random initialization of convnet params
+
+Other files used:
+* [min_func_sgd.py](min_func_sgd.py)
+* [cnn_init_params.py](cnn_init_params.py)
+
+To run this exercise, start python in the home directory for this repo and run: `execfile('cnn_train.py')`
+
