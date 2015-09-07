@@ -101,7 +101,7 @@ def cnn_cost(theta, images, labels, num_classes, filter_dim, num_filters, pool_d
 
     # Makes predictions given probs and returns without backpropagating errors.
     if pred:
-        preds = max(probs, [], 1)
+        preds = probs.argmax(axis=0) + 1
         grad = 0
         return None, grad, preds
 
